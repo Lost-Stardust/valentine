@@ -1,6 +1,9 @@
 import "./styles.css";
 import letter1 from "./imgs/valentine letter.png";
 import letter2 from "./imgs/valentine letter2.png";
+import music from "./imgs/someonetospendtimewithinstrumental.mp3";
+
+const valentineMusic = new Audio(music);
 
 NodeList.prototype.animate = function (keyframes, options) {
   this.forEach((el, i) => {
@@ -120,5 +123,9 @@ img1.addEventListener("click", () => {
     heartsRy = [];
     document.querySelector("h1").style.display = "none";
     phase2.style.zIndex = "-10";
-  }, 9000);
+  }, 10000);
 });
+
+valentineMusic.volume = 1;
+valentineMusic.play();
+valentineMusic.loop = true;
