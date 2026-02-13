@@ -115,6 +115,9 @@ img1.src = letter1;
 
 // Assign listener to img1 and transition to phase 2
 img1.addEventListener("click", () => {
+  valentineMusic.volume = 1;
+  valentineMusic.play();
+  valentineMusic.loop = true;
   let phase2 = document.querySelector(".open");
   phase2.style.display = "block";
   Frame();
@@ -125,7 +128,3 @@ img1.addEventListener("click", () => {
     phase2.style.zIndex = "-10";
   }, 10000);
 });
-
-valentineMusic.volume = 1;
-valentineMusic.play();
-valentineMusic.loop = true;
