@@ -56,6 +56,7 @@ body {
   place-items: center;
   height: 100vh;
   background: rgb(249, 143, 229);
+  cursor: url("./imgs/pinkcursor.png"), auto;
 }
 
 h1 {
@@ -72,4 +73,23 @@ span {
 
 span:not(.ws) {
   display: inline-block;
+}
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+.open {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  display: none;
+}
+
+.letter1 {
+  position: absolute;
+  width: 800px;
+}
+.letter2 {
+  position: absolute;
+  width: 800px;
 }
