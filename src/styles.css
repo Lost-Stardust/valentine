@@ -45,3 +45,31 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  --size: 10vmin;
+}
+
+body {
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: rgb(249, 143, 229);
+}
+
+h1 {
+  font-size: 12vw;
+  font-weight: 400;
+  color: #fff0;
+  display: flex;
+  width: 90%;
+}
+
+span {
+  flex-basis: 100%;
+}
+
+span:not(.ws) {
+  display: inline-block;
+}
