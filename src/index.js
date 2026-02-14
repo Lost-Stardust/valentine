@@ -130,7 +130,7 @@ img1.addEventListener("click", () => {
     img1.src = letter2;
     imgLeft.src = bouquet;
     imgRight.src = bouquet;
-    heartsRy = [];
+    // heartsRy = [];
     document.querySelector("h1").style.display = "none";
     phase2.style.zIndex = "-10";
   }, 10000);
