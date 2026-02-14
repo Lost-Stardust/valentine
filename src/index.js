@@ -1,6 +1,7 @@
 import "./styles.css";
 import letter1 from "./imgs/valentine letter.png";
 import letter2 from "./imgs/valentine letter2.png";
+import bouquet from "./imgs/bouquet.png";
 import music from "./imgs/someonetospendtimewithinstrumental.mp3";
 
 const valentineMusic = new Audio(music);
@@ -120,9 +121,15 @@ img1.addEventListener("click", () => {
   valentineMusic.loop = true;
   let phase2 = document.querySelector(".open");
   phase2.style.display = "block";
+
+  let imgLeft = document.querySelector(".imgLeft");
+  let imgRight = document.querySelector(".imgRight");
+
   Frame();
   setTimeout(() => {
     img1.src = letter2;
+    imgLeft.src = bouquet;
+    imgRight.src = bouquet;
     heartsRy = [];
     document.querySelector("h1").style.display = "none";
     phase2.style.zIndex = "-10";
