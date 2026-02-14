@@ -121,7 +121,33 @@ svg {
   position: absolute;
   width: 800px;
 }
-`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;;;CAGC;AACD;;;EAGE,sBAAsB;AACxB;AACA;;EAEE,YAAY;AACd;AACA;EACE,SAAS;AACX;AACA;EACE,gBAAgB;EAChB,mCAAmC;AACrC;AACA;;;;;EAKE,cAAc;EACd,eAAe;AACjB;AACA;;;;EAIE,aAAa;AACf;AACA;;;;;;;EAOE,yBAAyB;AAC3B;AACA;;EAEE,kBAAkB;AACpB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,mBAAmB;EACnB,aAAa;EACb,8BAA8B;EAC9B,qDAA0C;AAC5C;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,YAAY;EACZ,aAAa;EACb,UAAU;AACZ;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;AACA;EACE,YAAY;EACZ,aAAa;AACf;AACA;EACE,kBAAkB;EAClB,gBAAgB;EAChB,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,YAAY;AACd","sourcesContent":["/*\n  Josh's Custom CSS Reset\n  https://www.joshwcomeau.com/css/custom-css-reset/\n*/\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\nhtml,\nbody {\n  height: 100%;\n}\n* {\n  margin: 0;\n}\nbody {\n  line-height: 1.5;\n  -webkit-font-smoothing: antialiased;\n}\nimg,\npicture,\nvideo,\ncanvas,\nsvg {\n  display: block;\n  max-width: 100%;\n}\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\np,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  overflow-wrap: break-word;\n}\n#root,\n#__next {\n  isolation: isolate;\n}\n\n:root {\n  --size: 10vmin;\n}\n\nbody {\n  overflow: hidden;\n  display: grid;\n  place-items: center;\n  height: 100vh;\n  background: rgb(249, 143, 229);\n  cursor: url(\"./imgs/pinkcursor.png\"), auto;\n}\n\nh1 {\n  font-size: 12vw;\n  font-weight: 400;\n  color: #fff0;\n  display: flex;\n  width: 90%;\n}\n\nspan {\n  flex-basis: 100%;\n}\n\nspan:not(.ws) {\n  display: inline-block;\n}\nsvg {\n  width: 100vw;\n  height: 100vh;\n}\n.open {\n  position: absolute;\n  overflow: hidden;\n  height: 100%;\n  display: none;\n}\n\n.letter1 {\n  position: absolute;\n  width: 800px;\n}\n.letter2 {\n  position: absolute;\n  width: 800px;\n}\n"],"sourceRoot":""}]);
+.imgContainer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+
+  align-items: center;
+  gap: 30%;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+.imgLeft,
+.imgRight {
+  width: 400px;
+  animation: rotate 5s ease-in-out infinite;
+}
+`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;;;CAGC;AACD;;;EAGE,sBAAsB;AACxB;AACA;;EAEE,YAAY;AACd;AACA;EACE,SAAS;AACX;AACA;EACE,gBAAgB;EAChB,mCAAmC;AACrC;AACA;;;;;EAKE,cAAc;EACd,eAAe;AACjB;AACA;;;;EAIE,aAAa;AACf;AACA;;;;;;;EAOE,yBAAyB;AAC3B;AACA;;EAEE,kBAAkB;AACpB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,mBAAmB;EACnB,aAAa;EACb,8BAA8B;EAC9B,qDAA0C;AAC5C;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,YAAY;EACZ,aAAa;EACb,UAAU;AACZ;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;AACA;EACE,YAAY;EACZ,aAAa;AACf;AACA;EACE,kBAAkB;EAClB,gBAAgB;EAChB,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,aAAa;EACb,WAAW;EACX,YAAY;EACZ,6BAA6B;;EAE7B,mBAAmB;EACnB,QAAQ;AACV;AACA;EACE;IACE,yBAAyB;EAC3B;EACA;IACE,wBAAwB;EAC1B;EACA;IACE,yBAAyB;EAC3B;AACF;AACA;;EAEE,YAAY;EACZ,yCAAyC;AAC3C","sourcesContent":["/*\n  Josh's Custom CSS Reset\n  https://www.joshwcomeau.com/css/custom-css-reset/\n*/\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\nhtml,\nbody {\n  height: 100%;\n}\n* {\n  margin: 0;\n}\nbody {\n  line-height: 1.5;\n  -webkit-font-smoothing: antialiased;\n}\nimg,\npicture,\nvideo,\ncanvas,\nsvg {\n  display: block;\n  max-width: 100%;\n}\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\np,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  overflow-wrap: break-word;\n}\n#root,\n#__next {\n  isolation: isolate;\n}\n\n:root {\n  --size: 10vmin;\n}\n\nbody {\n  overflow: hidden;\n  display: grid;\n  place-items: center;\n  height: 100vh;\n  background: rgb(249, 143, 229);\n  cursor: url(\"./imgs/pinkcursor.png\"), auto;\n}\n\nh1 {\n  font-size: 12vw;\n  font-weight: 400;\n  color: #fff0;\n  display: flex;\n  width: 90%;\n}\n\nspan {\n  flex-basis: 100%;\n}\n\nspan:not(.ws) {\n  display: inline-block;\n}\nsvg {\n  width: 100vw;\n  height: 100vh;\n}\n.open {\n  position: absolute;\n  overflow: hidden;\n  height: 100%;\n  display: none;\n}\n\n.letter1 {\n  position: absolute;\n  width: 800px;\n}\n.letter2 {\n  position: absolute;\n  width: 800px;\n}\n.imgContainer {\n  position: absolute;\n  display: flex;\n  width: 100%;\n  height: 100%;\n  justify-content: space-around;\n\n  align-items: center;\n  gap: 30%;\n}\n@keyframes rotate {\n  from {\n    transform: rotate(-25deg);\n  }\n  50% {\n    transform: rotate(25deg);\n  }\n  100% {\n    transform: rotate(-25deg);\n  }\n}\n.imgLeft,\n.imgRight {\n  width: 400px;\n  animation: rotate 5s ease-in-out infinite;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -601,6 +627,16 @@ module.exports = styleTagTransform;
 
 /***/ },
 
+/***/ "./src/imgs/bouquet.png"
+/*!******************************!*\
+  !*** ./src/imgs/bouquet.png ***!
+  \******************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "33e994ac6ab5e66abc0a.png";
+
+/***/ },
+
 /***/ "./src/imgs/pinkcursor.png"
 /*!*********************************!*\
   !*** ./src/imgs/pinkcursor.png ***!
@@ -794,13 +830,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
 /* harmony import */ var _imgs_valentine_letter_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./imgs/valentine letter.png */ "./src/imgs/valentine letter.png");
 /* harmony import */ var _imgs_valentine_letter2_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./imgs/valentine letter2.png */ "./src/imgs/valentine letter2.png");
-/* harmony import */ var _imgs_someonetospendtimewithinstrumental_mp3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./imgs/someonetospendtimewithinstrumental.mp3 */ "./src/imgs/someonetospendtimewithinstrumental.mp3");
+/* harmony import */ var _imgs_bouquet_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./imgs/bouquet.png */ "./src/imgs/bouquet.png");
+/* harmony import */ var _imgs_someonetospendtimewithinstrumental_mp3__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./imgs/someonetospendtimewithinstrumental.mp3 */ "./src/imgs/someonetospendtimewithinstrumental.mp3");
 
 
 
 
 
-const valentineMusic = new Audio(_imgs_someonetospendtimewithinstrumental_mp3__WEBPACK_IMPORTED_MODULE_3__);
+
+const valentineMusic = new Audio(_imgs_someonetospendtimewithinstrumental_mp3__WEBPACK_IMPORTED_MODULE_4__);
 
 NodeList.prototype.animate = function (keyframes, options) {
   this.forEach((el, i) => {
@@ -917,10 +955,16 @@ img1.addEventListener("click", () => {
   valentineMusic.loop = true;
   let phase2 = document.querySelector(".open");
   phase2.style.display = "block";
+
+  let imgLeft = document.querySelector(".imgLeft");
+  let imgRight = document.querySelector(".imgRight");
+
   Frame();
   setTimeout(() => {
     img1.src = _imgs_valentine_letter2_png__WEBPACK_IMPORTED_MODULE_2__;
-    heartsRy = [];
+    imgLeft.src = _imgs_bouquet_png__WEBPACK_IMPORTED_MODULE_3__;
+    imgRight.src = _imgs_bouquet_png__WEBPACK_IMPORTED_MODULE_3__;
+    // heartsRy = [];
     document.querySelector("h1").style.display = "none";
     phase2.style.zIndex = "-10";
   }, 10000);
